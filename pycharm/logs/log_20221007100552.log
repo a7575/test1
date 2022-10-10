@@ -1,0 +1,19 @@
+[2022-10-07 10:05:52,453] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-07 10:05:52,461] logging_util.py->write_log line:60 [INFO]接口名称：获取统一接口鉴权码access_token
+[2022-10-07 10:05:52,468] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-07 10:05:52,475] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-07 10:05:52,482] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': 'wx5625afce5e19b885', 'secret': 'c1c4d018981132edc55ed98070c1c0a3', 'grant_type': 'client_credential'}
+[2022-10-07 10:05:52,493] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-07 10:05:52,500] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-07 10:05:52,873] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-10-07 10:05:52,880] logging_util.py->write_log line:60 [INFO]实际结果：{'access_token': '61_h8005igY_1G2vIb88SnRzwwkjF0TrOchiM-Q27bvr_DxH0ZVLBz3Fc6tUeDhm_cvs-k2jTE6RL2XOGjF87fa99HFmHMg9EZs04EPn536QrnKu2zhcNQ5jtwypExYX8-IYPJmDLAD23ZsusI3RFLbAEAXLR', 'expires_in': 7200}
+[2022-10-07 10:05:52,887] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-07 10:05:52,893] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------
+[2022-10-07 10:05:52,903] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-07 10:05:52,911] logging_util.py->write_log line:60 [INFO]接口名称：appid必填项检查
+[2022-10-07 10:05:52,918] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-07 10:05:52,925] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-07 10:05:52,932] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': '', 'secret': 'c1c4d018981132edc55ed98070c1c0a3', 'grant_type': 'client_credential'}
+[2022-10-07 10:05:52,938] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-07 10:05:52,946] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-07 10:05:53,002] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'errcode'}]

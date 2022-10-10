@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Aug 28 00:43:49 CST 2022","Sun Aug 28 00:43:50 CST 2022","358","testcases.gzh","test_requests02","TestRequest_03","","","新建标签","新建标签"
+"passed","Sun Aug 28 00:43:49 CST 2022","Sun Aug 28 00:43:49 CST 2022","200","testcases.gzh","test_requests02","TestRequest_03","","","secret必填项检查","secret必填项检查"
+"passed","Sun Aug 28 00:43:49 CST 2022","Sun Aug 28 00:43:49 CST 2022","108","testcases.gzh","test_requests02","TestRequest_03","","","appid必填项检查","appid必填项检查"
+"passed","Sun Aug 28 00:43:48 CST 2022","Sun Aug 28 00:43:49 CST 2022","438","testcases.gzh","test_requests02","TestRequest_03","","","获取统一接口鉴权码access_token","获取统一接口鉴权码access_token"
+"passed","Sun Aug 28 00:43:50 CST 2022","Sun Aug 28 00:43:50 CST 2022","521","testcases.gzh","test_requests02","TestRequest_03","","","文件上传","文件上传"
+"passed","Sun Aug 28 00:43:49 CST 2022","Sun Aug 28 00:43:49 CST 2022","300","testcases.gzh","test_requests02","TestRequest_03","","","查询标签接口","查询标签接口"

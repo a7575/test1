@@ -1,0 +1,10 @@
+-  name: 文件上传
+   base_url : ${get_base_url(base_wx_url)}
+   request :
+     url : /cgi-bin/media/uploadimg?access_token=${get_extract_data(access_token)}
+     method: post
+     files :
+       media: "E://2.JPEG"
+   validata :
+    - equals : {status_code: 200}
+    - contains : url

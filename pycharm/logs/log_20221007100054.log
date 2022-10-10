@@ -1,0 +1,5 @@
+[2022-10-07 10:00:54,422] logging_util.py->error_log line:64 [ERROR]分析参数化报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\common\parameters_util.py", line 26, in analysis_parameters
+    caseinfo_keys = dict(caseinfo).keys()
+ValueError: dictionary update sequence element #0 has length 4; 2 is required
+

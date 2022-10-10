@@ -1,0 +1,34 @@
+[2022-10-07 10:05:54,352] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'url'}, {'sql': "${mysql('')}"}]
+[2022-10-07 10:05:54,359] logging_util.py->write_log line:60 [INFO]实际结果：{'url': 'http://mmbiz.qpic.cn/mmbiz_jpg/hiaq1CvzWuILaGRA0mRpjxzGdApeU8CdIddcwzcpadRjiaypBuG82rVIlNbFGu8Zjcj3kD0Le8cTZicgRJPqwvOQg/0'}
+[2022-10-07 10:05:54,366] logging_util.py->error_log line:64 [ERROR]断言失败：返回结果中不包含:${mysql('')}
+[2022-10-07 10:05:54,373] logging_util.py->error_log line:64 [ERROR]断言报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 201, in validata_assert
+    error_log("断言失败：返回结果中不包含:" + value + "")
+  File "C:\pycharm\common\logging_util.py", line 65, in error_log
+    raise Exception(log_message)
+Exception: 断言失败：返回结果中不包含:${mysql('')}
+
+[2022-10-07 10:05:54,383] logging_util.py->error_log line:64 [ERROR]热加载报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 201, in validata_assert
+    error_log("断言失败：返回结果中不包含:" + value + "")
+  File "C:\pycharm\common\logging_util.py", line 65, in error_log
+    raise Exception(log_message)
+Exception: 断言失败：返回结果中不包含:${mysql('')}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 120, in analysis_yaml
+    self.validata_assert(caseinfo['validata'], return_data, status_code)
+  File "C:\pycharm\common\requests_util.py", line 208, in validata_assert
+    error_log("断言报错：异常信息：%s" % str(traceback.format_exc()))
+  File "C:\pycharm\common\logging_util.py", line 65, in error_log
+    raise Exception(log_message)
+Exception: 断言报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 201, in validata_assert
+    error_log("断言失败：返回结果中不包含:" + value + "")
+  File "C:\pycharm\common\logging_util.py", line 65, in error_log
+    raise Exception(log_message)
+Exception: 断言失败：返回结果中不包含:${mysql('')}
+
+

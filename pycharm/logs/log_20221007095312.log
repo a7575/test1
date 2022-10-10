@@ -1,0 +1,5 @@
+[2022-10-07 09:53:12,713] logging_util.py->error_log line:64 [ERROR]读取yaml测试用例报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\common\parameters_util.py", line 61, in read_testcase_file
+    with open(get_object_path() + yaml_path, encoding='utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\pycharm/testcase/api/gzh/select_flag.yml'
+

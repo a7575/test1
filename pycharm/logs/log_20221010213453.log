@@ -1,0 +1,4 @@
+[2022-10-10 21:34:53,223] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'url'}]
+[2022-10-10 21:34:53,229] logging_util.py->write_log line:60 [INFO]实际结果：{'url': 'http://mmbiz.qpic.cn/mmbiz_jpg/hiaq1CvzWuIIJRKZygpLS9k57sgSyIZniaYbuqmET8CKX5pdLjUIMMyeCx7Jo2eO64ZI9AssficgDVDiayB3yoAEmQ/0'}
+[2022-10-10 21:34:53,236] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-10 21:34:53,242] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------

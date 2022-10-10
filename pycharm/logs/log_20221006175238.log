@@ -1,0 +1,22 @@
+[2022-10-06 17:52:38,421] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-06 17:52:38,429] logging_util.py->write_log line:60 [INFO]接口名称：获取统一接口鉴权码access_token
+[2022-10-06 17:52:38,436] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-06 17:52:38,442] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-06 17:52:38,449] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': 'wx5625afce5e19b885', 'secret': 'c1c4d018981132edc55ed98070c1c0a3', 'grant_type': 'client_credential'}
+[2022-10-06 17:52:38,456] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-06 17:52:38,462] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-06 17:52:38,848] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-10-06 17:52:38,854] logging_util.py->write_log line:60 [INFO]实际结果：{'access_token': '61_C5i3ol2YbsebcuA2tl0yZJdOms8hpkvcOsP6DQFA1mg1OdGGHrjvHBtwk8eZV5eK5DMIT6PLV1yzRtzCNcu0r_Wcg1aXrIpZZhbJnmW30n4GpMfqgfsarVUUxHvgKaHj-_JMh1u8Zdyyr_DfGMXeAGAOUF', 'expires_in': 7200}
+[2022-10-06 17:52:38,861] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-06 17:52:38,868] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------
+[2022-10-06 17:52:38,881] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-06 17:52:38,889] logging_util.py->write_log line:60 [INFO]接口名称：appid必填项检查
+[2022-10-06 17:52:38,896] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-06 17:52:38,903] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-06 17:52:38,909] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': '', 'secret': 'c1c4d018981132edc55ed98070c1c0a3', 'grant_type': 'client_credential'}
+[2022-10-06 17:52:38,916] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-06 17:52:38,922] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-06 17:52:38,978] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'errcode'}]
+[2022-10-06 17:52:38,985] logging_util.py->write_log line:60 [INFO]实际结果：{'errcode': 41002, 'errmsg': 'appid missing rid: 633ea568-34a5b42b-2034dfa2'}
+[2022-10-06 17:52:38,991] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-06 17:52:38,998] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------

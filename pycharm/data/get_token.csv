@@ -1,0 +1,4 @@
+name,appid,secret,grant_type,assert_str
+获取统一接口鉴权码access_token,wx5625afce5e19b885,c1c4d018981132edc55ed98070c1c0a3,client_credential,access_token
+appid必填项检查,"",c1c4d018981132edc55ed98070c1c0a3,client_credential,errcode
+secret必填项检查,wx5625afce5e19b885,"",client_credential,errcode

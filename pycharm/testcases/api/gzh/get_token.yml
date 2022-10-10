@@ -1,0 +1,18 @@
+-  name: $csv{name}
+   base_url : ${get_base_url(base_wx_url)}
+   parameters:
+     name-appid-secret-grant_type-assert_str : data/get_token.csv
+   request :
+     url : /cgi-bin/token
+     method: get
+     params :
+         appid: $csv{appid}
+         secret: $csv{secret}
+         grant_type: $csv{grant_type}
+   extract:
+     access_token : '"access_token":"(.*?)"'
+     url : '"url":"(.*?)"'
+   validata :
+    - equals : {status_code: 200}
+    - contains : $csv{assert_str}
+

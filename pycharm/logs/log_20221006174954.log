@@ -1,0 +1,152 @@
+[2022-10-06 17:49:54,867] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-06 17:49:54,875] logging_util.py->write_log line:60 [INFO]接口名称：获取统一接口鉴权码access_token
+[2022-10-06 17:49:54,881] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-06 17:49:54,888] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-06 17:49:54,894] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': 'wx5625afce5e19b885', 'secret': 'c1c4d018981132edc55ed98070c1c0a3', 'grant_type': 'client_credential'}
+[2022-10-06 17:49:54,904] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-06 17:49:54,911] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-06 17:49:54,934] logging_util.py->error_log line:64 [INFO]统一发送请求报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connection.py", line 364, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connection.py", line 505, in _connect_tls_proxy
+    ssl_context=ssl_context,
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "C:\python\lib\ssl.py", line 423, in wrap_socket
+    session=session
+  File "C:\python\lib\ssl.py", line 870, in _create
+    self.do_handshake()
+  File "C:\python\lib\ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+OSError: [Errno 0] Error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\pycharm\venv\lib\site-packages\requests\adapters.py", line 499, in send
+    timeout=timeout,
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.weixin.qq.com', port=443): Max retries exceeded with url: /cgi-bin/token?appid=wx5625afce5e19b885&secret=c1c4d018981132edc55ed98070c1c0a3&grant_type=client_credential (Caused by ProxyError('Cannot connect to proxy.', OSError(0, 'Error')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 157, in send_requests
+    **kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.weixin.qq.com', port=443): Max retries exceeded with url: /cgi-bin/token?appid=wx5625afce5e19b885&secret=c1c4d018981132edc55ed98070c1c0a3&grant_type=client_credential (Caused by ProxyError('Cannot connect to proxy.', OSError(0, 'Error')))
+
+[2022-10-06 17:49:54,941] logging_util.py->error_log line:64 [INFO]热加载报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connection.py", line 364, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connection.py", line 505, in _connect_tls_proxy
+    ssl_context=ssl_context,
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "C:\python\lib\ssl.py", line 423, in wrap_socket
+    session=session
+  File "C:\python\lib\ssl.py", line 870, in _create
+    self.do_handshake()
+  File "C:\python\lib\ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+OSError: [Errno 0] Error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\pycharm\venv\lib\site-packages\requests\adapters.py", line 499, in send
+    timeout=timeout,
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.weixin.qq.com', port=443): Max retries exceeded with url: /cgi-bin/token?appid=wx5625afce5e19b885&secret=c1c4d018981132edc55ed98070c1c0a3&grant_type=client_credential (Caused by ProxyError('Cannot connect to proxy.', OSError(0, 'Error')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 157, in send_requests
+    **kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.weixin.qq.com', port=443): Max retries exceeded with url: /cgi-bin/token?appid=wx5625afce5e19b885&secret=c1c4d018981132edc55ed98070c1c0a3&grant_type=client_credential (Caused by ProxyError('Cannot connect to proxy.', OSError(0, 'Error')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 99, in analysis_yaml
+    **caseinfo['request'])
+  File "C:\pycharm\common\requests_util.py", line 160, in send_requests
+    error_log("统一发送请求报错：异常信息：%s" % str(traceback.format_exc()))
+  File "C:\pycharm\common\logging_util.py", line 65, in error_log
+    raise Exception(log_message)
+Exception: 统一发送请求报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 700, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 996, in _prepare_proxy
+    conn.connect()
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connection.py", line 364, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connection.py", line 505, in _connect_tls_proxy
+    ssl_context=ssl_context,
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "C:\python\lib\ssl.py", line 423, in wrap_socket
+    session=session
+  File "C:\python\lib\ssl.py", line 870, in _create
+    self.do_handshake()
+  File "C:\python\lib\ssl.py", line 1139, in do_handshake
+    self._sslobj.do_handshake()
+OSError: [Errno 0] Error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\pycharm\venv\lib\site-packages\requests\adapters.py", line 499, in send
+    timeout=timeout,
+  File "C:\pycharm\venv\lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\pycharm\venv\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.weixin.qq.com', port=443): Max retries exceeded with url: /cgi-bin/token?appid=wx5625afce5e19b885&secret=c1c4d018981132edc55ed98070c1c0a3&grant_type=client_credential (Caused by ProxyError('Cannot connect to proxy.', OSError(0, 'Error')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 157, in send_requests
+    **kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\pycharm\venv\lib\site-packages\requests\adapters.py", line 559, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.weixin.qq.com', port=443): Max retries exceeded with url: /cgi-bin/token?appid=wx5625afce5e19b885&secret=c1c4d018981132edc55ed98070c1c0a3&grant_type=client_credential (Caused by ProxyError('Cannot connect to proxy.', OSError(0, 'Error')))
+
+

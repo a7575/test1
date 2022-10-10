@@ -1,0 +1,25 @@
+1:一级关键字必须有name，base_url,request，validate
+
+2:二级关键字requests下必须有method和url
+
+3：传参方式有：params（get）
+   post传参 json关键字，data（表单）
+   files（文件):
+      files :
+         media: "E://1.JPEG"
+
+4：提取中间变量
+   正则表达式和json提取，如
+      正则
+      extract:
+       access_token : '"access_token":"(.*?)"'
+       json提取
+       extract:
+       access_token : access_token
+
+   取值：
+    ${get_extract_data(access_token)}
+
+ 5：热加载
+ 在debug文件中，获得随机数方法中，传递的值，需要int，则强转为int，需要str，强转为str
+   需要在yaml文件使用动态参数时，编写方法，在yaml中调用

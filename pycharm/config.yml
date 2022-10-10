@@ -1,0 +1,18 @@
+base:
+  base_wyn_url: https://api.apiopen.top
+  base_wx_url: https://api.weixin.qq.com
+  base_php_url: http://47.107.116.139
+  base_bd_url: http://127.0.0.1:8888/api/private/v1
+
+log:
+  log_name : logs_
+  log_level : info
+  log_formate:  '[%(asctime)s] %(filename)s->%(funcName)s line:%(lineno)d [%(levelname)s]%(message)s'
+
+mysql_db:
+  # 数据库开关
+  switch: False
+  host:
+  user: root
+  password: '123456'
+  port: 3306

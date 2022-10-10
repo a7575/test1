@@ -1,0 +1,13 @@
+-  name: 新建标签
+   base_url : ${get_base_url(base_wx_url)}
+   request :
+     url : /cgi-bin/tags/create?access_token=${get_extract_data(access_token)}
+     method: post
+     json :  {"tag":{"name":"ms${get_random(1000,9999)}"}}
+   validata :
+    - equals : {status_code: 200}
+    - contains : tag
+
+
+
+

@@ -1,0 +1,27 @@
+[2022-10-10 21:36:33,483] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-10 21:36:33,491] logging_util.py->write_log line:60 [INFO]接口名称：获取统一接口鉴权码access_token
+[2022-10-10 21:36:33,497] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-10 21:36:33,504] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-10 21:36:33,510] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': 'wx5625afce5e19b885', 'secret': 'c1c4d018981132edc55ed98070c1c0a3', 'grant_type': 'client_credential'}
+[2022-10-10 21:36:33,517] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-10 21:36:33,523] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-10 21:36:33,833] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'access_token'}]
+[2022-10-10 21:36:33,839] logging_util.py->write_log line:60 [INFO]实际结果：{'access_token': '61_oy5NIp9eEtfqqSBtPVkwKB820yaaMOkNjNqofOLRg5n7inVFYAK7hOiolt45Ho6Y_gUBS4oOudguKcUXutvv6rzxxKLpEqULw85q30vCrJEzqZkZdiQVkvGrqPH-rYW7ByB7Hs-p0Igu-Nc6QJWfAJAIBO', 'expires_in': 7200}
+[2022-10-10 21:36:33,846] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-10 21:36:33,852] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------
+[2022-10-10 21:36:33,861] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-10 21:36:33,869] logging_util.py->write_log line:60 [INFO]接口名称：appid必填项检查
+[2022-10-10 21:36:33,875] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-10 21:36:33,882] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-10 21:36:33,888] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': '', 'secret': 'c1c4d018981132edc55ed98070c1c0a3', 'grant_type': 'client_credential'}
+[2022-10-10 21:36:33,894] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-10 21:36:33,900] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-10 21:36:33,944] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'errcode'}]
+[2022-10-10 21:36:33,950] logging_util.py->write_log line:60 [INFO]实际结果：{'errcode': 41002, 'errmsg': 'appid missing rid: 63441fe3-174124c5-2a34bea0'}
+[2022-10-10 21:36:33,957] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-10 21:36:33,963] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------
+[2022-10-10 21:36:33,972] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-10 21:36:33,980] logging_util.py->write_log line:60 [INFO]接口名称：secret必填项检查
+[2022-10-10 21:36:33,987] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-10 21:36:33,993] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-10 21:36:34,000] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': 'wx5625afce5e19b885', 'secret': '', 'grant_type': 'client_credential'}

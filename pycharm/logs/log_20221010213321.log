@@ -1,0 +1,14 @@
+[2022-10-10 21:33:21,234] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'tag'}]
+[2022-10-10 21:33:21,241] logging_util.py->write_log line:60 [INFO]实际结果：{'errcode': 45056, 'errmsg': 'too many tag now, no need to add new hint: [qkEE2Hj2e-m2Hjsa] rid: 63441f22-11a98975-32aefe6f'}
+[2022-10-10 21:33:21,247] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-10 21:33:21,254] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------
+[2022-10-10 21:33:21,266] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-10 21:33:21,275] logging_util.py->write_log line:60 [INFO]接口名称：文件上传
+[2022-10-10 21:33:21,281] logging_util.py->write_log line:60 [INFO]请求方发：post
+[2022-10-10 21:33:21,287] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=61_p0d59ee8ToLhZWrPgR9TpdvgSgP3RSXe5GCb6HUNnwJRUsZeXz4o_vTyRPzBjZCYKo66n25c6JhLg15ekj7ehX-ZqvxD0jOr41r_QYNeGOasJmaEh5H00Mai5gOFNPG3lE3MmKScUov6oiQ2WLLaAEAAPP
+[2022-10-10 21:33:21,294] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-10 21:33:21,300] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-10 21:33:21,796] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'url'}]
+[2022-10-10 21:33:21,802] logging_util.py->write_log line:60 [INFO]实际结果：{'url': 'http://mmbiz.qpic.cn/mmbiz_jpg/hiaq1CvzWuIIJRKZygpLS9k57sgSyIZniaYbuqmET8CKX5pdLjUIMMyeCx7Jo2eO64ZI9AssficgDVDiayB3yoAEmQ/0'}
+[2022-10-10 21:33:21,808] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-10 21:33:21,815] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------

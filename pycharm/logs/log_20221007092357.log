@@ -1,0 +1,7 @@
+[2022-10-07 09:23:57,669] logging_util.py->write_log line:60 [INFO]----------接口请求开始-------------
+[2022-10-07 09:23:57,678] logging_util.py->write_log line:60 [INFO]接口名称：获取统一接口鉴权码access_token
+[2022-10-07 09:23:57,685] logging_util.py->write_log line:60 [INFO]请求方发：get
+[2022-10-07 09:23:57,691] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/token
+[2022-10-07 09:23:57,698] logging_util.py->write_log line:60 [INFO]请求参数：{'appid': 'wx5625afce5e19b885', 'secret': 'c1c4d018981132edc55ed98070c1c0a3', 'grant_type': 'client_credential'}
+[2022-10-07 09:23:57,705] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-07 09:23:57,712] logging_util.py->write_log line:60 [INFO]请求头：{}

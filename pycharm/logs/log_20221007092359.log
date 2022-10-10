@@ -1,0 +1,7 @@
+[2022-10-07 09:23:59,012] logging_util.py->write_log line:60 [INFO]请求路径：https://api.weixin.qq.com/cgi-bin/media/uploadimg?access_token=61_6HEB50G02RhXoCbwYL3qjWbVLGweVSGPE3cRjli7-3JfeAcpF0jy-nyZWwqM5bnkoB0T6DP7NXPr1YaMhY0vAw58deCcPzq8jYcgpOsD-qeQcE1PQAyDrO81rZlXFFBDVw90epOH7RLYN7PAYUDeABAGCL
+[2022-10-07 09:23:59,018] logging_util.py->write_log line:60 [INFO]文件上传：None
+[2022-10-07 09:23:59,025] logging_util.py->write_log line:60 [INFO]请求头：{}
+[2022-10-07 09:23:59,413] logging_util.py->write_log line:60 [INFO]预期结果：[{'equals': {'status_code': 200}}, {'contains': 'url'}]
+[2022-10-07 09:23:59,420] logging_util.py->write_log line:60 [INFO]实际结果：{'url': 'http://mmbiz.qpic.cn/mmbiz_jpg/hiaq1CvzWuILaGRA0mRpjxzGdApeU8CdIddcwzcpadRjiaypBuG82rVIlNbFGu8Zjcj3kD0Le8cTZicgRJPqwvOQg/0'}
+[2022-10-07 09:23:59,427] logging_util.py->write_log line:60 [INFO]----------接口请求成功-------------
+[2022-10-07 09:23:59,434] logging_util.py->write_log line:60 [INFO]----------接口请求结束-------------

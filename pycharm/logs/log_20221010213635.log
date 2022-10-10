@@ -1,0 +1,5 @@
+[2022-10-10 21:36:35,113] logging_util.py->error_log line:64 [ERROR]热加载报错：异常信息：Traceback (most recent call last):
+  File "C:\pycharm\common\requests_util.py", line 107, in analysis_yaml
+    for key, value in dict(caseinfo['extract']).items():
+ValueError: dictionary update sequence element #0 has length 1; 2 is required
+
